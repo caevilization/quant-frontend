@@ -7,7 +7,7 @@ const defaultData: TFNodeData = {
   title: 'Chat Input',
   description: 'Get chat inputs from user',
   nodeType: 'compute',
-  parameters: [
+  inputs: [
     {
       id: 'text',
       title: 'Text',

@@ -12,7 +12,11 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
+    "@ionic/react": "^8.4.3",
+    "@remixicon/react": "^4.6.0",
+    "@tabler/icons-react": "^3.30.0",
     "@types/react-router-dom": "^5.3.3",
+    "feather-icons": "^4.29.2",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

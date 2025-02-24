@@ -1,8 +1,8 @@
-export type NodeType = 'account' | 'compute' | 'action' | 'data';
+export type NodeType = 'account' | 'compute' | 'action' | 'input' | 'output';
 
 export type InputType = 'none' | 'text';
 
-export interface TFParameter {
+export interface TFInput {
   id: string;
   title: string;
   tooltip?: string;
@@ -24,8 +24,11 @@ export interface TFOutput {
 export interface TFNodeData {
   title: string;
   description: string;
-  icon?: string;
+  icon?: React.ReactNode;
   nodeType: NodeType;
-  parameters: TFParameter[];
+  inputs: TFInput[];
   outputs: TFOutput[];
+  onRunOnce?: () => void;
+  onAutomate?: () => void;
+  selected?: boolean;
 }
